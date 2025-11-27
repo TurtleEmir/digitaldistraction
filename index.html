@@ -3,123 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Distractions: Reclaiming Your Focus</title>
-    <link rel="stylesheet" href="style.css">
+    <title>The Ties Phenomenon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 3.5em;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            font-weight: 800;
+            letter-spacing: -2px;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            color: #666;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 50px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .highlight h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .significance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .significance-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 30px;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .significance-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .significance-card h4 {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            font-size: 0.9em;
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+        }
+
+        .hero-image {
+            text-align: center;
+            margin: 40px 0;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.5);
+        }
+
+        .image-caption {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #667eea;
+            font-style: italic;
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1 class="pulse">THE TIES PHENOMENON</h1>
+            <p class="subtitle">Uncovering the Legacy of a Lost Connection</p>
+        </header>
 
-    <header class="header">
-        <nav class="navbar">
-            <a href="#home" class="nav-logo">Focus</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#what" class="nav-link">The Problem</a></li>
-                <li class="nav-item"><a href="#impact" class="nav-link">The Impact</a></li>
-                <li class="nav-item"><a href="#solutions" class="nav-link">The Solutions</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </header>
-
-    <section class="hero" id="home">
-        
-        <div class="hero-content">
-            <h1>The Age of Digital Distraction</h1>
-            <p>Your attention is a finite resource. Technology is engineered to steal it. It's time to take it back.</p>
-            <a href="#what" class="cta-button">Understand the Problem</a>
+        <div class="hero-image">
+            <img src="baby pic/ai-baby-meme.jpg" alt="Ties' Nephew" />
+            <p class="image-caption">The Legendary Heir: Ties' Long-Lost Nephew</p>
         </div>
-    </section>
 
-    <section class="content-section" id="what">
-        <div class="container">
-            <h2>What Are Digital Distractions?</h2>
-            <p class="section-subtitle">They are the pings, pop-ups, and notifications designed to pull you out of the moment.</p>
-            <div class="grid-container">
-                <div class="grid-item">
-                    
+        <div class="hero-image">
+            <img src="data:image/jpeg;base64,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
 
-[Image of a hand holding a smartphone with social media icons]
+        <div class="content-section">
+            <h2>The Discovery That Changed Everything</h2>
+            <p>
+                In the annals of modern history, few revelations have captured the public imagination quite like the discovery of Ties' long-lost nephew. This extraordinary baby, whose very existence remained shrouded in mystery for years, represents not just a familial connection—but a bridge between past and future, between legend and reality.
+            </p>
+            <p>
+                The story begins with whispers, rumors passed down through generations, of a child separated from the legendary Ties through circumstances beyond anyone's control. For years, the family tree remained incomplete, a puzzle missing its most crucial piece. Until now.
+            </p>
 
-                    <h3>Social Media Feeds</h3>
-                    <p>Endless scrolling interfaces and variable rewards are engineered to be addictive, fragmenting your focus and time.</p>
-                </div>
-                <div class="grid-item">
-                    
-                    <h3>Constant Notifications</h3>
-                    <p>Every buzz or alert breaks your concentration. Even if ignored, they create a "switching cost" as your brain checks in.</p>
-                </div>
-                <div class="grid-item">
-                    
-                    <h3>Context-Switching</h3>
-                    <p>Jumping between email, chat, and work tasks seems productive, but it dramatically reduces cognitive performance and efficiency.</p>
-                </div>
+            <div class="highlight">
+                <h3>The Moment of Recognition</h3>
+                <p>
+                    When the truth finally emerged, it sent shockwaves through those who knew the significance. This wasn't just any baby—this was the rightful heir to Ties' extraordinary legacy, carrying within him the same remarkable qualities that made his uncle a figure of such profound importance.
+                </p>
             </div>
         </div>
-    </section>
 
-    <section class="content-section-dark" id="impact">
-        <div class="container">
-            <h2>The High Cost of Low Attention</h2>
-            <p class="section-subtitle">The impact goes far beyond just lost time. It affects our work, our well-being, and our relationships.</p>
-            
-            <div class="impact-card">
-                <div class="impact-icon">🧠</div>
-                <div class="impact-text">
-                    <h3>Mental Health</h3>
-                    <p>Studies link excessive screen time and social media use to increased anxiety, depression, sleep disruption, and a persistent "fear of missing out" (FOMO).</p>
+        <div class="content-section">
+            <h2>Why This Baby Matters</h2>
+            <p>
+                The significance of Ties' nephew cannot be overstated. His existence represents the continuation of a lineage that many thought had ended, a bloodline carrying unique characteristics that have captivated observers for generations.
+            </p>
+
+            <div class="significance-grid">
+                <div class="significance-card">
+                    <h4>🧬 Genetic Legacy</h4>
+                    <p>He carries the remarkable traits that made Ties legendary, ensuring these qualities continue into future generations.</p>
                 </div>
-            </div>
-            
-            <div class="impact-card">
-                <div class="impact-icon">📉</div>
-                <div class="impact-text">
-                    <h3>Productivity</h3>
-                    <p>It takes an average of **23 minutes** to fully regain focus after a significant distraction. Constant interruptions mean we rarely engage in the deep work required for high-quality output.</p>
+                <div class="significance-card">
+                    <h4>👑 Rightful Heir</h4>
+                    <p>As the only known nephew, he stands as the direct descendant and natural successor to Ties' extraordinary position.</p>
                 </div>
-            </div>
-            
-            <div class="impact-card">
-                <div class="impact-icon">👥</div>
-                <div class="impact-text">
-                    <h3>Social Connection</h3>
-                    <p>Being "present" with your phone instead of the people in front of you ("phubbing") degrades the quality of in-person interactions and weakens social bonds.</p>
+                <div class="significance-card">
+                    <h4>🔗 Missing Link</h4>
+                    <p>His discovery completes the family narrative, answering questions that have lingered for years about Ties' extended family.</p>
+                </div>
+                <div class="significance-card">
+                    <h4>✨ Symbol of Hope</h4>
+                    <p>He represents renewal, second chances, and the idea that even what seems lost can be found again.</p>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section class="content-section" id="solutions">
-        <div class="container">
-            <h2>How to Reclaim Your Focus</h2>
-            <p class="section-subtitle">You can't eliminate technology, but you can control it. Start with small, intentional changes.</p>
-            
-            <ul class="solutions-list">
-                <li>
-                    <strong>Curate Your Notifications:</strong> Go to your settings and turn off all notifications except for those from actual people (e.g., calls, texts). Disable all badges and banners for email and social media.
-                </li>
-                <li>
-                    <strong>Create "No-Phone" Zones:</strong> Make the bedroom, the dinner table, and the bathroom screen-free areas. This helps your brain associate those places with rest and connection.
-                </li>
-                <li>
-                    <strong>Use Grayscale Mode:</strong> A colorful screen is stimulating. A gray screen is boring. Make your phone less appealing by setting it to grayscale through accessibility settings.
-                </li>
-                <li>
-                    <strong>Schedule Your Distractions:</strong> Instead of checking email and social media "just for a minute," set aside specific 20-minute blocks (e.g., one at noon, one at 4 PM) to check them all at once.
-                </li>
-                <li>
-                    <strong>Practice Single-Tasking:</strong> Close all tabs and apps not related to the one task you are currently working on. Set a timer for 45 minutes and give that single task your undivided attention.
-                </li>
-            </ul>
+        <div class="content-section">
+            <h2>The Path Forward</h2>
+            <p>
+                As Ties' nephew grows, all eyes turn toward the future. What will this remarkable child become? How will he carry forward the legacy entrusted to him? These questions drive the fascination surrounding this extraordinary baby.
+            </p>
+            <p>
+                The Ties Phenomenon isn't just about the past—it's about potential, about the incredible journey that lies ahead for this child who represents so much to so many. In his eyes, we see echoes of his uncle's greatness. In his smile, we glimpse the promise of tomorrow.
+            </p>
+            <p>
+                This is more than a family reunion. This is destiny unfolding before our very eyes.
+            </p>
         </div>
-    </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Focus. All rights reserved. Take back your time.</p>
-    </footer>
-
-    <script src="script.js"></script>
+        <footer>
+            <p>&copy; 2024 The Ties Phenomenon | A Legacy Restored</p>
+        </footer>
+    </div>
 </body>
 </html>
